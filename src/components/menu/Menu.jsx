@@ -1,15 +1,9 @@
 import "./index.css";
 
-const SideMenu = () => {
+const Menu = () => {
   return (
     <div className="SideMenu">
       <ul>
-        <li>
-          <img
-            src="https://img.icons8.com/color/256/twitter--v1.png"
-            alt="twitter logo"
-          />
-        </li>
         <li>
           <img
             src="https://img.icons8.com/pulsar-line/256/home-page.png"
@@ -46,9 +40,8 @@ const SideMenu = () => {
           <p>Bookmarks</p>
         </li>
       </ul>
-      <button>Tweet</button>
     </div>
   );
 };
 
-export default SideMenu;
+export default Menu;

@@ -1,0 +1,9 @@
+.trends {
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(209, 205, 205);
+  margin-top: 20px;
+  margin-left: 10px;
+  background-color: rgb(216, 216, 216);
+  border-radius: 20px;
+  font-size: small;
+}

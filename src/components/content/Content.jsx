@@ -1,5 +1,6 @@
 import Header from "../header";
 import MessageList from "../messageList";
+import SideMenu from "../SideMenu/SideMenu";
 import "./index.css";
 
 const Content = () => {

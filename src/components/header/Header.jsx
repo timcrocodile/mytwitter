@@ -15,7 +15,7 @@ const Header = () => {
           alt="sparkling"
         />
       </div>
-      {/* <div className="Header__down">
+      <div className="Header__down">
         <img
           className="Header__down--profile"
           src="https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg"
@@ -28,7 +28,7 @@ const Header = () => {
           src="https://img.icons8.com/fluency/256/combo-chart.png"
           alt="graph"
         />
-      </div> */}
+      </div>
     </div>
   );
 };
