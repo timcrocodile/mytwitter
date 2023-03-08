@@ -1,12 +1,22 @@
-import messageList from "../../mock/messageList";
+// import messageList from "../../mock/messageList";
 import MessageItem from "../messageItem";
 import "./index.css";
+import { useState, useEffect } from "react";
 
 const MessageList = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch("https://dummyjson.com/posts")
+      .then((response) => response.json())
+      .then(({ posts }) => setData(posts)),
+      [];
+  });
+
   return (
     <div className="MessageList">
-      {messageList.map((message) => (
-        <MessageItem messageData={message} />
+      {data.map((pippo) => (
+        <MessageItem messageData={pippo} key={pippo.id} />
       ))}
     </div>
   );

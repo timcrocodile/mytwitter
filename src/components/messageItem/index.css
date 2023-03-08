@@ -28,6 +28,11 @@
   font-size: 0.9rem;
 }
 
+.userid {
+  color: rgb(232, 8, 8);
+  font-size: 0.9rem;
+}
+
 .MessageItem__content--icons {
   display: flex;
   justify-content: space-between;

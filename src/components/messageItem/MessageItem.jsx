@@ -1,14 +1,16 @@
 import "./index.css";
+import { useState, useEffect } from "react";
 
 const MessageItem = ({ messageData }) => {
-  const { photo, userName, body, email } = messageData;
+  const { userId, title, body, tags } = messageData;
 
   return (
     <div className="MessageItem">
-      <img className="MessageItem__photo" src={photo} alt={userName} />
       <div className="MessageItem__content">
-        <span>{userName}</span>
-        <span> {email}</span>
+        <p className="userid">{userId}</p>
+
+        <span>{title}</span>
+        <span> {tags}</span>
         <p>{body}</p>
         <div className="MessageItem__content--icons">
           <img
