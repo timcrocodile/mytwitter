@@ -7,6 +7,7 @@ const Content = () => {
   return (
     <div className="Content">
       <Header />
+
       <MessageList />
     </div>
   );

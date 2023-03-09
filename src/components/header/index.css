@@ -146,3 +146,27 @@
 #hamburger-menu ul {
   padding-left: 0px;
 }
+
+.nuovoform {
+  display: flex;
+  gap: 15px;
+}
+
+.case {
+  border: 0;
+  background-color: #01b5f1;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  padding: 5px;
+}
+
+.cerca {
+  border: 0;
+
+  color: #01b5f1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
