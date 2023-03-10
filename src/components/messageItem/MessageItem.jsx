@@ -1,5 +1,4 @@
 import "./index.css";
-import { useState, useEffect } from "react";
 
 const MessageItem = ({ messageData }) => {
   const { userId, title, body, tags } = messageData;

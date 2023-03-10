@@ -1,7 +1,8 @@
 import TrendList from "../trendList";
 import "./index.css";
+import Button from "../button";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const SideTrends = () => {
   //tramite use ref riesco ad accedere alle proprietà di 2 elementi del dom,
@@ -17,6 +18,8 @@ const SideTrends = () => {
   const domElement = useRef();
 
   const inputElement = useRef();
+
+  const [modalYes, setModalYes] = setModalYes(false);
 
   useEffect(() => {
     console.log(
@@ -46,6 +49,7 @@ const SideTrends = () => {
       <input type="text" placeholder="what's trending?" ref={inputElement} />
 
       <TrendList />
+      <Button onclick={modalYes(true)} />
     </div>
   );
 };
