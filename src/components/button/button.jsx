@@ -1,9 +1,11 @@
 import "./index.css";
 
-
-
-const Button = ({onClick}) = () => {
-  return <button className="tweetbtn" onClick={onClick}>clicca qui per comporre un tweet</button>;
+const Button = ({ value, onClick }) => {
+  return (
+    <button className="Button" onClick={onClick}>
+      {value}
+    </button>
+  );
 };
 
 export default Button;

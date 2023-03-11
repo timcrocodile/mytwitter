@@ -1,3 +1,9 @@
-.Content {
+/* .Content {
   width: 100%;
+} */
+
+.Content {
+  position: absolute;
+  right: 30%;
+  width: 45%;
 }

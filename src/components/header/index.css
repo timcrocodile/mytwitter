@@ -1,6 +1,9 @@
 .Header {
+  position: sticky;
+  top: 0;
   display: flex;
   flex-direction: column;
+  background-color: white;
 }
 
 .Header img {
@@ -28,7 +31,12 @@
   border-bottom: 1px solid lightgrey;
 }
 
-.Header__down input {
+.Header__hamburger {
+  color: #04b5f1;
+  font-size: 30px;
+}
+
+.Header__down input:nth-child(1) {
   padding: 0 0 0 10px;
   width: 80%;
   height: 28px;
@@ -45,128 +53,8 @@
   border-radius: 100%;
 }
 
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.35s, visibility 0.35s, height 0.35s;
-  overflow: hidden;
-  background: black;
-  z-index: -1;
-}
-
-#main-menu {
-  display: block;
-  height: 100px;
-  width: 100%;
-  background: #3d0e61;
-  margin: 0px;
-  z-index: 9;
-}
-
-#main-menu ul {
-  max-width: 800px;
-  width: 100%;
-  height: 100%;
-  margin: 0px auto;
-  padding: 0px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  z-index: 9;
-}
-
-#main-menu li {
-  list-style-type: none;
-  font-size: 2rem;
-}
-
-#main-menu a {
-  color: #b9faf8;
-  font-size: 1.5rem;
-  text-decoration: none;
-}
-
-#main-menu a:hover {
-  text-decoration: underline;
-}
-
-#hamburger-input {
-  display: none;
-}
-
-#hamburger-menu {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  width: 50px;
-  height: 50px;
-  display: none;
-  border: none;
-  padding: 0px;
-  margin: 0px;
-  font-family: "Cabin", Sans-serif;
-  background: linear-gradient(
-    to bottom,
-    #3d0e61,
-    #3d0e61 20%,
-    white 20%,
-    white 40%,
-    #3d0e61 40%,
-    #3d0e61 60%,
-    white 60%,
-    white 80%,
-    #3d0e61 80%,
-    #3d0e61 100%
-  );
-}
-
-#hamburger-menu #sidebar-menu {
-  visibilty: hidden;
-  position: fixed;
-  top: 0;
-  left: -250px;
-  width: 200px;
-  height: 100%;
-  background-color: #3d0e61;
-  transition: 0.3s;
-  padding: 0px 10px;
-  box-sizing: border-box;
-}
-
-#hamburger-menu h3 {
-  color: #b9faf8;
-  font-size: 2.2rem;
-}
-
-#hamburger-menu ul {
-  padding-left: 0px;
-}
-
-.nuovoform {
-  display: flex;
-  gap: 15px;
-}
-
-.case {
-  border: 0;
-  background-color: #01b5f1;
-  color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  padding: 5px;
-}
-
-.cerca {
-  border: 0;
-
-  color: #01b5f1;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
+@media screen and (min-width: 800px) {
+  .Header__hamburger {
+    display: none;
+  }
 }

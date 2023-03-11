@@ -1,31 +1,12 @@
-import React, { useState } from "react";
 import "./index.css";
-import SideMenu from "../SideMenu";
+import MenuContent from "../menuContent";
 
-function HamburgerMenu() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleMenuClick = () => {
-    setIsOpen(!isOpen);
-  };
-
+const HamburgerMenu = ({ showMenu }) => {
   return (
-    <div className="hamburger-menu">
-      <button
-        className={`menu-button ${isOpen ? "open" : ""}`}
-        onClick={handleMenuClick}
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      {isOpen && (
-        <div className="menu-items">
-          <SideMenu />
-        </div>
-      )}
+    <div className={`hamburger ${showMenu ? "show" : ""}`}>
+      <MenuContent />
     </div>
   );
-}
+};
 
 export default HamburgerMenu;

@@ -1,4 +1,4 @@
-@media screen and (min-width: 750px) {
+/* @media screen and (min-width: 750px) {
   .hamburger-menu {
     display: none;
   }
@@ -54,4 +54,26 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   z-index: 1;
+} */
+
+.hamburger {
+  position: absolute;
+  top: 47px;
+  left: -400px;
+  width: 300px;
+  height: calc(100vh - 47px);
+  /* background-color: #0b0a0a;
+  border-right: 1px solid #de0000; */
+  transition: all 4s ease;
+  display: block;
+}
+
+.show {
+  left: 0px;
+}
+
+@media screen and (min-width: 800px) {
+  .hamburger {
+    display: none;
+  }
 }

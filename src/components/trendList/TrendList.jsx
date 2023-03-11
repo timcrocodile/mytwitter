@@ -1,30 +1,25 @@
+import { useState, useEffect } from "react";
 import TrendItem from "../trendItem";
 import "./index.css";
 
-const TrendList = () => {
-  const arrayTrends = [
-    {
-      subTitle: "Musica - Di Tendenza",
-      title: "Eminem",
-      text: "16.000 Tweet ",
-    },
-    {
-      subTitle: "Tecnologia - Di Tendenza",
-      title: "Apple",
-      text: "89.000 Tweet ",
-    },
-    {
-      subTitle: "Di Tendenza in: Italia",
-      title: "Mare",
-      text: "45.000 Tweet ",
-    },
-  ];
+const TrendList = ({ TrendsInputValue }) => {
+  const [trendList, setTrendList] = useState([]);
 
+  useEffect(() => {
+    fetch("https://dummyjson.com/todos")
+      .then((res) => res.json())
+      .then(({ todos }) => setTrendList(todos));
+  }, []);
+
+  const filteredTrendList = () =>
+    trendList.filter((trends) => trends.todo.includes(TrendsInputValue));
   return (
-    <div className="trends">
-      <h1>Tendenze per te</h1>
-      {arrayTrends.map((item, index) => (
-        <TrendItem data={item} key={index} />
+    <div className="TrendList">
+      <p className="trendsstart">
+        ➡️ Abbiamo selezionato i trends adatti sulla base dei tuoi gusti!
+      </p>
+      {filteredTrendList().map((item) => (
+        <TrendItem data={item} key={item.id} />
       ))}
     </div>
   );
