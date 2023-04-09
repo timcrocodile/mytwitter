@@ -1,12 +1,12 @@
-import "./index.css";
-import MenuContent from "../menuContent";
+// import "./index.css";
+// import MenuContent from "../menuContent";
 
-const HamburgerMenu = ({ showMenu }) => {
-  return (
-    <div className={`hamburger ${showMenu ? "show" : ""}`}>
-      <MenuContent />
-    </div>
-  );
-};
+// const HamburgerMenu = ({ showMenu }) => {
+//   return (
+//     <div className={`hamburger ${showMenu ? "show" : ""}`}>
+//       <MenuContent />
+//     </div>
+//   );
+// };
 
-export default HamburgerMenu;
+// export default HamburgerMenu;
