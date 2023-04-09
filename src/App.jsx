@@ -22,7 +22,7 @@ import Content from "./components/content";
 import HamburgerMenu from "./components/HamburgerMenu";
 import Modal from "./components/modal";
 import Popup from "./components/popup";
-import SideMenu from "./components/sideMenu";
+import SideMenu from "./components/SideMenu";
 import SideTrends from "./components/sideTrends";
 import "./App.css";
 
