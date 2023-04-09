@@ -19,7 +19,7 @@
 import { useState, useEffect } from "react";
 import Button from "./components/button";
 import Content from "./components/content";
-
+import HamburgerMenu from "./components/HamburgerMenu";
 import Modal from "./components/modal";
 import Popup from "./components/popup";
 import SideMenu from "./components/sideMenu";

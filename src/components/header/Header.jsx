@@ -3,7 +3,7 @@ import { FaHamburger } from "react-icons/fa";
 import { FcManager, FcHeatMap } from "react-icons/fc";
 
 import { useState, useEffect, useRef } from "react";
-import HamburgerMenu from "../hamburgerMenu";
+import HamburgerMenu from "../HamburgerMenu";
 
 const Header = ({ setHeaderInputValue }) => {
   const [showMenu, setShowMenu] = useState(false);

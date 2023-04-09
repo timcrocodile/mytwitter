@@ -1,3 +1,3 @@
-// import HamburgerMenu from "./HamburgerMenu";
+import HamburgerMenu from "./HamburgerMenu";
 
-// export default HamburgerMenu;
+export default HamburgerMenu;
