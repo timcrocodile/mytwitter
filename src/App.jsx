@@ -42,10 +42,10 @@ function App() {
 
       {isModalVisibile && <Modal setModalVisibility={setModalVisibility} />}
 
-      {/* <Popup /> */}
-      {/* <h3>Ciaooooo</h3>
+      <Popup>
+        <h3>Ciaooooo</h3>
         <Button value="Close popup" onClick={() => alert("Chiuso!")} />
-      </Popup> */}
+      </Popup>
     </div>
   );
 }
